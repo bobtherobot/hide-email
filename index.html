@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Hide Email</title>
+<script src='MakeEmailLink.js'></script>
+
+</head>
+
+<body>
+
+	<div>
+		<input type="text" id="email" placeholder="Email" title="Email"/>
+	</div>
+
+	<div>
+		<input type="text" id="subject" placeholder="Email Subject" title="Email Subject"/>
+	</div>
+	
+	<div>
+		<textarea id="message" cols="45" rows="5" maxlength="2000" title="Email Message">Hello,</textarea>
+	</div>
+	
+	<div>
+		<input type="text" id="label" placeholder="Display Text" title="Display Text"/>
+	</div>
+
+	<div>
+		<label for="encrypt" title="When checked, nothing is obvious. When un-checked, the email address is split up and not THAT obvious, but you can manually modify the resulting HTML.">Encrypt</label>
+		<input type="checkbox" id="encrypt" />
+	</div>
+	
+	<p>&nbsp;</p>
+
+	<div>
+		<input type="button" id="button" value="Generate" onclick="javascript:gieson.MakeEmailLink()" />
+	</div>
+	
+	<p>&nbsp;</p>
+
+	<div>
+		<label for="testLink">Text Link</label>
+		<div id="testLink" class="testLink" title="Copy and paste this code into your page"></div>
+	</div>
+	
+	
+	<div>
+		<label for="code">Code</label>
+		<br><textarea id="code" cols="45" rows="5"></textarea>
+	</div>
+	
+	<p>&nbsp;</p>
+
+	<div>
+		<a href="http://www.gieson.com">Copyright © 2016 Mike Gieson</a>
+	</div>
+
+</body>
+</html>
